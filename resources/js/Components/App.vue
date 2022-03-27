@@ -1,11 +1,11 @@
 <template>
   <div >
     <div>
-      <app-Layout>
+      <!-- <app-Layout> -->
         <!-- <transition name="fade"> -->
           <router-view></router-view>
         <!-- </transition> -->
-      </app-Layout>
+      <!-- </app-Layout> -->
     </div>
   </div>
 </template>
