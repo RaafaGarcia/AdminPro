@@ -30,7 +30,10 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@moesaid/cleopatra": "^1.1.1",
+        "apexcharts": "^3.35.0",
         "mdb-ui-kit": "^3.11.0",
+        "sweetalert2": "^11.4.7",
         "vuex": "^4.0.2",
         "vuex-persistedstate": "^4.1.0"
     }

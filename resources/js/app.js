@@ -11,7 +11,7 @@ const app = createApp(App)
 
 // app.component('App', App)
 router.beforeEach((to, from, next) => {
-    document.title = `${to.meta.title} - ${process.env.MIX_APP_NAME}`
+    document.title = `${to.meta.title} - Admin`
     if(to.meta.middleware=="guest"){
         if(store.state.auth.authenticated){
             next({name:"dashboard"})

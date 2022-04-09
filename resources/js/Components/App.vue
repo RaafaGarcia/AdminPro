@@ -1,12 +1,12 @@
 <template>
   <div >
-    <div>
+    
       <!-- <app-Layout> -->
         <!-- <transition name="fade"> -->
           <router-view></router-view>
         <!-- </transition> -->
       <!-- </app-Layout> -->
-    </div>
+   
   </div>
 </template>
 <script>

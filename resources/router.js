@@ -12,6 +12,10 @@ import DahboardLayout from '@/Components/Layouts/Layout.vue'
 
 import Dashboard from '@/Components/Views/Dashboard.vue'
 
+import Reset from '@/Components/Views/ResetPassword.vue'
+
+import Forgot from '@/Components/Views/ForgotPassword.vue'
+
 
 
 const router = createRouter({
@@ -43,21 +47,32 @@ const router = createRouter({
             }
         },
         {
-            path:"/",
-            component:DahboardLayout,
+            name:"forgot",
+            path:"/password/forgot",
+            component:Forgot,
             meta:{
-                middleware:"auth"
+                middleware:"guest",
+                title:`Restablecer Contraseña`
+            }
+        },
+        {
+            name:"reset",
+            path:"/password/reset/:token",
+            component:Reset,
+            meta:{
+                middleware:"guest",
+                title:`Restablecer Contraseña`
+            }
+        },
+        {
+            name:"dashboard",
+            path:"/",
+            component:Dashboard,
+            meta:{
+                middleware:"auth",
+                title:'Dashboard'
             },
-            children:[
-                {
-                    name:"dashboard",
-                    path: '/',
-                    component: Dashboard,
-                    meta:{
-                        title:`Dashboard`
-                    }
-                }
-            ]
+            
         }
 
 

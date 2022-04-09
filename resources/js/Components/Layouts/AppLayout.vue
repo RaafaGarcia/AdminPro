@@ -36,15 +36,11 @@
                   <jet-dropdown align="right" width="48">
                     <template #trigger>
                       <button
-                        class="
-                          flex
-                          text-sm
-                          border-2 border-transparent
-                          rounded-full
-                          focus:outline-none focus:border-gray-300
-                          transition
+                        class=" text-green-600 font-semibold
+                          
                         "
                       >
+                      {{user.name}}
                         <!-- <img
                           class="h-9 w-9 rounded-full object-cover"
                           :src="$page.props.user.profile_photo_url"
@@ -446,6 +442,7 @@ import JetDropdownLink from "@/Components/Jetstream/DropdownLink";
 import JetNavLink from "@/Components/Jetstream/NavLink";
 import JetResponsiveNavLink from "@/Components/Jetstream/ResponsiveNavLink";
 import sidebar from "@/Components/Layouts/sidebar";
+import {mapActions} from 'vuex'
 
 // import Notifications from "@/Components/Tools/Notifications";
 // import SideLink from "@/Components/Tools/SidebarLink";
@@ -466,13 +463,20 @@ export default {
   data() {
     return {
       showingNavigationDropdown: false,
+      user:this.$store.state.auth.user
     };
   },
 
-  methods: {
-    
-
-    
-  },
+   methods:{
+        ...mapActions({
+            signOut:"auth/logout"
+        }),
+        async logout(){
+            await axios.post('/logout').then(({data})=>{
+                this.signOut()
+                this.$router.push({name:"login"})
+            })
+        }
+    }
 };
 </script>

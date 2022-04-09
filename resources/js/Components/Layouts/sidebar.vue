@@ -7,8 +7,7 @@
         class="
           md:w-1/4
           lg:w-1/6
-          sm:w-2/6
-          sm:relative
+          sm:w-2/6 sm:relative
           bg-white
           shadow
           flex-col
@@ -25,11 +24,12 @@
             </p>
 
             <!-- end link -->
-
+            <!-- {{$route}} -->
             <ul class="mt-4">
+              <!--  -->
               <side-link
-                :href="'dashboard'"
-                :active="'dashboard'"
+                :href="'/'"
+                :active="routeName.includes('dashboard') ? true : false"
               >
                 <div class="flex items-center">
                   <svg
@@ -53,10 +53,10 @@
                   <span class="text-sm ml-2">Tablero</span>
                 </div>
               </side-link>
-
+              <!--  -->
               <side-link
-                :href="'users.index'"
-                :active="'users.*'"
+                :href="'/users'"
+                :active="routeName.includes('users') ? true : false"
               >
                 <div class="flex items-center">
                   <svg
@@ -79,9 +79,10 @@
                   <span class="text-sm ml-2">Usuarios</span>
                 </div>
               </side-link>
+              <!--  -->
               <side-link
-                :href="'roles.index'"
-                :active="'roles.*'"
+                :href="'/roles'"
+                :active="routeName.includes('roles') ? true : false"
               >
                 <div class="flex items-center">
                   <svg
@@ -99,15 +100,24 @@
                   <span class="text-sm ml-2">Permisos</span>
                 </div>
               </side-link>
-
+              <!--  -->
               <side-link
-                :href="'notifications.index'"
-                :active="'notifications.*'"
+                :href="'/notifications'"
+                :active="routeName.includes('notifications') ? true : false"
               >
                 <div class="flex items-center">
                   <svg
                     class="h-5 w-5"
-                    viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />  <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                  </svg>
 
                   <span class="text-sm ml-2">Notificaciones</span>
                 </div>
@@ -123,9 +133,10 @@
             <!-- end link -->
 
             <ul class="mt-4">
+              <!--  -->
               <side-link
-                :href="'blog_users.index'"
-                :active="'blog_users.*'"
+                :href="'/blog_users'"
+                :active="routeName.includes('blog_users') ? true : false"
               >
                 <div class="flex items-center">
                   <svg
@@ -148,9 +159,10 @@
                   <span class="text-sm ml-2">Blog Usuarios</span>
                 </div>
               </side-link>
+              <!--  -->
               <side-link
-                :href="'blog_categories.index'"
-                :active="'blog_categories.*'"
+                :href="'/blog_categories'"
+                :active="routeName.includes('blog_categories') ? true : false"
               >
                 <div class="flex items-center">
                   <svg
@@ -170,10 +182,12 @@
                   <span class="text-sm ml-2">Categorias</span>
                 </div>
               </side-link>
-
+              <!--  -->
               <side-link
-                :href="'blog_subcategories.index'"
-                :active="'blog_subcategories.*'"
+                :href="'/blog_subcategories'"
+                :active="
+                  routeName.includes('blog_subcategories') ? true : false
+                "
               >
                 <div class="flex items-center">
                   <svg
@@ -196,10 +210,10 @@
                   <span class="text-sm ml-2">Subcategorias</span>
                 </div>
               </side-link>
-
+              <!--  -->
               <side-link
-                :href="'blog_posts.index'"
-                :active="'blog_posts.*'"
+                :href="'/blog_posts'"
+                :active="routeName.includes('blog_posts') ? true : false"
               >
                 <div class="flex items-center">
                   <svg
@@ -248,7 +262,7 @@
           </div>
         </div>
       </div>
-      <div class="md:w-3/4 lg:w-5/6 sm:w-4/6 container-fluid m-0 p-0">
+      <div class="md:w-3/4 lg:w-5/6 sm:w-4/6 m-0 p-0">
         <slot></slot>
       </div>
     </div>
@@ -268,6 +282,7 @@ export default {
   data() {
     return {
       moved: false,
+      routeName: this.$route.name,
     };
   },
   methods: {
