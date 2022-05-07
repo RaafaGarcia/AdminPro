@@ -1,0 +1,57 @@
+
+
+
+
+
+
+.sidebar li:hover {
+  color: #cccccc;
+  background:black;
+
+}
+.sidebar li {
+  cursor: pointer;
+  background:transparent;
+
+} 
+.activeLi{
+  
+  background:#444 !important;
+
+}
+.sidebar a:hover {
+  color: #cccccc;
+ 
+
+}
+
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #aaa;
+  border-radius: 25px;;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #888;
+  color: white;
+}
+
+.md-v-line {
+  position: absolute;
+  border-left: 1px solid rgba(0,0,0,.125);
+  height: 50px;
+  top:0px;
+  left:54px;
+  background:transparent;
+  }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}

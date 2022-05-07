@@ -1,0 +1,111 @@
+body {
+  font-family: "helvetica"
+}
+.bold{
+  font-weight: bold;
+}
+
+.font-helvetica{
+  font-family: "helvetica",
+}
+
+.title {
+  font-size: 22px;
+}
+.subtitle {
+  font-size: 18px;
+}
+.mintext {
+  font-size: 14;
+}
+
+.fvfont {
+  background-image: url("/images/home/fondo.jpeg"); /* The image used */
+  background-color: #ddd6cc; /* Used if the image is unavailable */
+ 
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.bgblack {
+  background: #333 !important;
+}
+.tableHover:hover {
+  background: #e3f2fd;
+  cursor: pointer;
+}
+
+.hoverwhite {
+  color: #bbb;
+}
+.hoverwhite:hover {
+  color: white;
+}
+
+.card-list li.page-item {
+  height: 36px;
+}
+.card-list .form-check-input[type="checkbox"] + label:before,
+.form-check-input[type="checkbox"]:not(.filled-in) + label:after,
+label.btn input[type="checkbox"] + label:before,
+label.btn input[type="checkbox"]:not(.filled-in) + label:after {
+  margin-top: 0;
+}
+.card-list .form-check-input[type="checkbox"] + label,
+label.btn input[type="checkbox"] + label {
+  height: 15px;
+}
+.card-list .form-check {
+  height: 0;
+}
+.card-list .badge {
+  height: 18px;
+  margin-top: 3px;
+}
+.fontFv {
+  background: #ddd6cc;
+  color: black;
+}
+.detalleFv {
+  background: #cc83cf;
+}
+.textfv {
+  color: #d29cd4 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 16px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
+
+@media only screen and (min-width: 1900px) {
+}
+@media only screen and (min-width: 2500px) {
+}
+
+@media only screen and (min-width: 3000px) {
+}

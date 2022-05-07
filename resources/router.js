@@ -16,6 +16,7 @@ import Reset from '@/Components/Views/ResetPassword.vue'
 
 import Forgot from '@/Components/Views/ForgotPassword.vue'
 
+import UsersIndex from '@/Components/Views/Users/Index.vue'
 
 
 const router = createRouter({
@@ -71,6 +72,17 @@ const router = createRouter({
             meta:{
                 middleware:"auth",
                 title:'Dashboard'
+            },
+            
+        },
+
+        {
+            name:"usersIndex",
+            path:"/users",
+            component:UsersIndex,
+            meta:{
+                middleware:"auth",
+                title:'Usuarios'
             },
             
         }

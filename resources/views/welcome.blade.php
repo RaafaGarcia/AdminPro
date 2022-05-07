@@ -31,12 +31,13 @@
  
 </head>
 
-<body>
-  <div id="app">
-  </div>
-  <div id="contenedor_carga">
+<body class="font-helvetica antialiased h-screen ">
+<div id="contenedor_carga">
     <div id="carga"></div>
   </div>
+  <div id="app">
+  </div>
+  
 
   <script type="text/javascript">
     window.onload = function() {

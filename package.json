@@ -33,7 +33,7 @@
         "@moesaid/cleopatra": "^1.1.1",
         "apexcharts": "^3.35.0",
         "mdb-ui-kit": "^3.11.0",
-        "sweetalert2": "^11.4.7",
+        "sweetalert2": "^11.4.8",
         "vuex": "^4.0.2",
         "vuex-persistedstate": "^4.1.0"
     }

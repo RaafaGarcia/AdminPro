@@ -11290,6 +11290,661 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#main {
+  transition: margin-left 0.5s;
+  padding: 0.1px;
+  background: white;
+}
+
+#content {
+  background: white;
+}
+
+.theme__color--background1 {
+  background: #3163c5;
+}
+
+.theme__color--background2 {
+  background: #163563;
+}
+
+.theme__color--text {
+  color: #3163c5;
+}
+
+h1, .h1 {
+  font-size: 2.25rem !important;
+  font-weight: 300 !important;
+}
+
+h2, .h2 {
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+}
+
+h3, .h3 {
+  font-size: 1.75rem !important;
+  font-weight: 300 !important;
+}
+
+h4, .h4 {
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+}
+
+h5, .h5 {
+  font-size: 1.25rem !important;
+  font-weight: 300 !important;
+}
+
+h6, .h6 {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+  padding: 10px 18px;
+  border-bottom: 1px solid #babcc2 !important;
+}
+
+.background {
+  background: #3163c5 !important;
+}
+
+.background__img {
+  background-image: url("https://cdn.turkishairlines.com/m/7b0235492e35e9ac/original/1400-660-jpg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background__img2 {
+  background-image: url("https://cdn.turkishairlines.com/m/7b0235492e35e9ac/original/1400-660-jpg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background__gradient {
+  background: #020024;
+  background: linear-gradient(0deg, #020024 0%, #7f79e6 0%, #4f46e5 100%);
+}
+
+.navpublic.active {
+  cursor: pointer;
+  background: #3163c5;
+  border-radius: 10px;
+  color: white;
+}
+
+.navpublic {
+  cursor: pointer;
+  color: black;
+}
+
+.navpublic:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background: #172d58;
+  color: white;
+}
+
+.backspinner {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 1;
+  /* background: rgba(255, 254, 254, .6)9 */
+  z-index: 120;
+}
+
+.preloader {
+  width: 100px;
+  height: 100px;
+  /* top:50px;
+  left:50px; */
+  border: 10px solid #eee;
+  border-top: 10px solid #3163c5;
+  border-radius: 50%;
+  -webkit-animation-name: girar;
+          animation-name: girar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /* animation-timing-function: linear; */
+}
+
+@-webkit-keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 
+::-webkit-scrollbar {
+  width: 15px;
+} */
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+} */
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: rgb(62, 56, 182);
+  border-radius: 10px;
+} */
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: rgb(79, 70, 229);
+}
+.scroll-spy-style {
+  position: relative;
+
+  overflow-y: scroll;
+
+  margin: 1px 1px 1px 1px;
+} */
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#contenedor_carga {
+  background-color: rgba(250, 240, 245, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#carga {
+  border: 15px solid #ccc;
+  border-top-color: #10b981;
+  border-top-style: groove;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.resourceHeader {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/*Overrides for Tailwind CSS */
+/*Form fields*/
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+  color: #4a5568;
+  /*text-gray-700*/
+  padding-left: 1rem;
+  /*pl-4*/
+  /* padding-right: 1rem; pl-4 */
+  padding-top: 0.5rem;
+  /*pl-2*/
+  padding-bottom: 0.5rem;
+  /*pl-2*/
+  line-height: 1.25;
+  /*leading-tight*/
+  border-width: 2px;
+  /*border-2*/
+  border-radius: 0.25rem;
+  border-color: #edf2f7;
+  /*border-gray-200*/
+  background-color: #edf2f7;
+  /*bg-gray-200*/
+}
+
+/*Row Hover*/
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+  background-color: #ebf4ff;
+  /*bg-indigo-100*/
+}
+
+/*Pagination Buttons*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  font-weight: 700;
+  /*font-bold*/
+  border-radius: 0.25rem;
+  /*rounded*/
+  border: 1px solid transparent;
+  /*border border-transparent*/
+}
+
+.paginate_button {
+  color: white !important;
+}
+
+/*Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  color: white !important;
+  /*text-white*/
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  /*shadow*/
+  font-weight: 700;
+  /*font-bold*/
+  border-radius: 0.25rem;
+  /*rounded*/
+  background: #10b981 !important;
+  /*bg-indigo-500*/
+  border: 1px solid transparent;
+  /*border border-transparent*/
+}
+
+/*Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  color: white !important;
+  /*text-white*/
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  /*shadow*/
+  font-weight: 700;
+  /*font-bold*/
+  border-radius: 0.25rem;
+  /*rounded*/
+  background: #10b981 !important;
+  /*bg-indigo-500*/
+  border: 1px solid transparent;
+  /*border border-transparent*/
+}
+
+/*Add padding to bottom border */
+table.dataTable.no-footer {
+  border-bottom: 1px solid #e2e8f0;
+  /*border-b-1 border-gray-300*/
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.dataTables_length select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(16, 185, 129);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  border-color: #10b981;
+}
+
+.dataTables_filter input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(16, 185, 129);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  border-color: #10b981;
+}
+
+/*Change colour of responsive icon*/
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  background-color: #10b981 !important;
+  /*bg-indigo-500*/
+}
+
+body {
+  font-family: "helvetica";
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-helvetica {
+  font-family: "helvetica";
+}
+
+.title {
+  font-size: 22px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.mintext {
+  font-size: 14;
+}
+
+.fvfont {
+  background-image: url("/images/home/fondo.jpeg");
+  /* The image used */
+  background-color: #ddd6cc;
+  /* Used if the image is unavailable */
+  background-position: top;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
+.bgblack {
+  background: #333 !important;
+}
+
+.tableHover:hover {
+  background: #e3f2fd;
+  cursor: pointer;
+}
+
+.hoverwhite {
+  color: #bbb;
+}
+
+.hoverwhite:hover {
+  color: white;
+}
+
+.card-list li.page-item {
+  height: 36px;
+}
+
+.card-list .form-check-input[type=checkbox] + label:before,
+.form-check-input[type=checkbox]:not(.filled-in) + label:after,
+label.btn input[type=checkbox] + label:before,
+label.btn input[type=checkbox]:not(.filled-in) + label:after {
+  margin-top: 0;
+}
+
+.card-list .form-check-input[type=checkbox] + label,
+label.btn input[type=checkbox] + label {
+  height: 15px;
+}
+
+.card-list .form-check {
+  height: 0;
+}
+
+.card-list .badge {
+  height: 18px;
+  margin-top: 3px;
+}
+
+.fontFv {
+  background: #ddd6cc;
+  color: black;
+}
+
+.detalleFv {
+  background: #cc83cf;
+}
+
+.textfv {
+  color: #d29cd4 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.container-notification {
+  width: 20rem;
+  height: 1rem;
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+}
+
+.notification .h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #1f2022;
+}
+
+.notification ul {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.notification li {
+  display: inline-block;
+  padding: 0.85rem 1rem;
+  color: #1f2022;
+}
+
+.notification h6, .notification .h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0.45rem 0;
+}
+
+.notification a {
+  color: #4aaee7;
+  background: transparent;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.notification {
+  position: absolute;
+}
+
+.notification .tooltip-bell {
+  position: absolute;
+  display: block;
+  left: 9rem;
+  color: #a5a6a8;
+}
+
+.notification .tooltip-notify {
+  position: absolute;
+  top: 2.5rem;
+  line-height: 1.5;
+  color: #27303d;
+  width: 20rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.notification .tooltip-notify::before {
+  content: "";
+  position: absolute;
+  top: -0.4rem;
+  right: 8.3rem;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-bottom: 1.5rem solid #fff;
+}
+
+#circle {
+  position: absolute;
+  top: 0;
+  left: 0.75rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  background: #f07379;
+}
+
+.notification .notification-item {
+  display: flex;
+  align-items: flex-start;
+  display: -ms-grid;
+  display: grid;
+  padding: 0.65rem 0;
+}
+
+.notification #heading {
+  display: flex;
+  align-items: flex-start;
+  display: -ms-grid;
+  display: grid;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.01rem solid #eee;
+}
+
+.notification .notification-link {
+  position: absolute;
+  margin: 0.4rem 0;
+}
+
+.notification .heading-left, .img-left {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: 0 1rem 0 0;
+}
+
+.notification .heading-left, .user-content {
+  grid-column: span 9;
+  width: 14rem;
+}
+
+.notification .heading-right, .img-left {
+  grid-column: auto;
+}
+
+.notification .heading-right, .user-content {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.notification .heading-right {
+  width: 2.5rem;
+}
+
+.notification .img-left {
+  width: 3rem;
+}
+
+.notification .user-photo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.5rem 0 0;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.notification p.user-info {
+  margin: 0.15rem 0 0;
+}
+.notification p.time {
+  margin: 0;
+  color: #9da4ae;
+}
+
+.notification span.name {
+  font-weight: 500;
+}
+
+.notification .fadeStart-enter-active {
+  -webkit-animation: fadeStart 0.2s both ease-in-out;
+  animation: fadeStart 0.2s both ease-in-out;
+}
+
+.notification .fadeStart-leave-active {
+  -webkit-animation: fadeEnd 0.2s both ease-in-out;
+  animation: fadeEnd 0.2s both ease-in-out;
+}
+
+[v-cloak] > * {
+  display: none;
+}
+
+@-webkit-keyframes fadeStart {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+    display: block;
+  }
+}
+@keyframes fadeStart {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+    display: block;
+  }
+}
+@-webkit-keyframes fadeEnd {
+  0% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes fadeEnd {
+  0% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+}
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 *//*
@@ -11749,6 +12404,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1536px;
   }
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
 .visible {
   visibility: visible;
 }
@@ -11766,6 +12435,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
 }
 .left-0 {
   left: 0px;
@@ -11893,6 +12566,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-4 {
   margin-right: 1rem;
 }
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.-mb-1 {
+  margin-bottom: -0.25rem;
+}
+.mr-1 {
+  margin-right: 0.25rem;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .block {
   display: block;
 }
@@ -11956,6 +12641,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-40 {
   height: 10rem;
 }
+.h-7 {
+  height: 1.75rem;
+}
+.h-20 {
+  height: 5rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -12003,6 +12694,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-40 {
   width: 10rem;
+}
+.w-7 {
+  width: 1.75rem;
+}
+.w-20 {
+  width: 5rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -12118,6 +12815,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-divide-opacity));
+}
 .overflow-auto {
   overflow: auto;
 }
@@ -12133,6 +12839,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.whitespace-nowrap {
   white-space: nowrap;
 }
 .rounded-lg {
@@ -12154,11 +12863,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
 }
 .border-2 {
   border-width: 2px;
+}
+.border-4 {
+  border-width: 4px;
 }
 .border-b-2 {
   border-bottom-width: 2px;
@@ -12221,6 +12937,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-indigo-300 {
   --tw-border-opacity: 1;
   border-color: rgb(165 180 252 / var(--tw-border-opacity));
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -12322,6 +13042,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
 }
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }
@@ -12356,6 +13083,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-8 {
   padding: 2rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -12409,6 +13139,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -12448,6 +13182,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pl-1 {
   padding-left: 0.25rem;
 }
+.pr-1 {
+  padding-right: 0.25rem;
+}
+.pl-7 {
+  padding-left: 1.75rem;
+}
+.pr-12 {
+  padding-right: 3rem;
+}
+.pr-3 {
+  padding-right: 0.75rem;
+}
 .text-left {
   text-align: left;
 }
@@ -12456,6 +13202,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-right {
   text-align: right;
+}
+.align-middle {
+  vertical-align: middle;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -12508,6 +13257,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-tight {
   line-height: 1.25;
+}
+.leading-normal {
+  line-height: 1.5;
+}
+.leading-4 {
+  line-height: 1rem;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -12614,6 +13369,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .opacity-100 {
   opacity: 1;
@@ -12726,6 +13485,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
+.hover\:bg-green-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -12773,6 +13540,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .focus\:border-green-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(34 197 94 / var(--tw-border-opacity));
+}
+.focus\:border-indigo-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 .focus\:bg-indigo-600:focus {
   --tw-bg-opacity: 1;
@@ -12822,6 +13593,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(21 128 61 / var(--tw-text-opacity));
 }
+.focus\:text-indigo-500:focus {
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -12829,6 +13604,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .focus\:ring:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 .focus\:ring-gray-300:focus {
@@ -12847,8 +13627,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(191 219 254 / var(--tw-ring-opacity));
 }
+.focus\:ring-green-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(34 197 94 / var(--tw-ring-opacity));
+}
+.focus\:ring-gray-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(107 114 128 / var(--tw-ring-opacity));
+}
+.focus\:ring-red-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
+}
 .focus\:ring-opacity-50:focus {
   --tw-ring-opacity: 0.5;
+}
+.focus\:ring-offset-2:focus {
+  --tw-ring-offset-width: 2px;
 }
 .active\:bg-gray-900:active {
   --tw-bg-opacity: 1;
@@ -13049,6 +13844,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-left {
     text-align: left;
   }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 @media (min-width: 768px) {
 
@@ -13141,8 +13941,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (min-width: 1024px) {
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:block {
     display: block;
+  }
+
+  .lg\:table {
+    display: table;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-1\/6 {

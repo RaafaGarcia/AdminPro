@@ -7,17 +7,17 @@
         <!-- Primary Navigation Menu -->
         <div class="container-fluid px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center h-16">
-            <div class="flex items-center " >
+            <div class="flex items-center">
               <!-- Logo -->
               <div class="flex-shrink-0 flex items-center">
-              <router-link to="/">
+                <router-link to="/">
                   <jet-application-mark class="block w-auto pb-1 pt-1" />
                 </router-link>
               </div>
 
               <!-- Navigation Links -->
             </div>
-            <div class="flex items-center " >
+            <div class="flex items-center">
               <!-- <notifications /> -->
               <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <!-- <div class="ml-3 relative">
@@ -32,20 +32,21 @@
               </div> -->
 
                 <!-- Settings Dropdown -->
-                <div  class="ml-3 relative">
+                <div class="ml-3 relative">
                   <jet-dropdown align="right" width="48">
                     <template #trigger>
-                      <button
-                        class=" text-green-600 font-semibold
-                          
-                        "
-                      >
-                      {{user.name}}
-                        <!-- <img
-                          class="h-9 w-9 rounded-full object-cover"
-                          :src="$page.props.user.profile_photo_url"
-                          :alt="$page.props.user.name"
-                        /> -->
+                      <button class="text-green-600 font-semibold flex items-center">
+                        
+                        <img
+                          class="h-9 w-9 rounded-full object-cover mr-2"
+                          :src="
+                            'https://ui-avatars.com/api/?name=' +
+                            user.name +
+                            '&color=FFFFFF&background=201751'
+                          "
+                          :alt="user.name"
+                        />
+                        {{ user.name }}
                       </button>
                     </template>
 
@@ -70,7 +71,7 @@
                   </jet-dropdown>
                 </div>
 
-                <div  class="ml-3 relative">
+                <div class="ml-3 relative">
                   <!-- <inertia-link
                     :href="route('login')"
                     style="border-radius: 15px"
@@ -147,16 +148,7 @@
               Inicio 1
             </jet-responsive-nav-link> -->
           </div>
-          <div
-            class="
-              
-             
-              flex-col
-              justify-between
-              
-            "
-            
-          >
+          <div class="flex-col justify-between">
             <div class="px-4">
               <div class="Segment">
                 <p class="uppercase text-xs text-green-600 mt-4 tracking-wider">
@@ -434,7 +426,6 @@
 </template>
 
 <script>
-
 import JetApplicationMark from "@/Components/Jetstream/ApplicationMark";
 import JetBanner from "@/Components/Jetstream/Banner";
 import JetDropdown from "@/Components/Jetstream/Dropdown";
@@ -442,7 +433,7 @@ import JetDropdownLink from "@/Components/Jetstream/DropdownLink";
 import JetNavLink from "@/Components/Jetstream/NavLink";
 import JetResponsiveNavLink from "@/Components/Jetstream/ResponsiveNavLink";
 import sidebar from "@/Components/Layouts/sidebar";
-import {mapActions} from 'vuex'
+import { mapActions } from "vuex";
 
 // import Notifications from "@/Components/Tools/Notifications";
 // import SideLink from "@/Components/Tools/SidebarLink";
@@ -463,20 +454,20 @@ export default {
   data() {
     return {
       showingNavigationDropdown: false,
-      user:this.$store.state.auth.user
+      user: this.$store.state.auth.user,
     };
   },
 
-   methods:{
-        ...mapActions({
-            signOut:"auth/logout"
-        }),
-        async logout(){
-            await axios.post('/logout').then(({data})=>{
-                this.signOut()
-                this.$router.push({name:"login"})
-            })
-        }
-    }
+  methods: {
+    ...mapActions({
+      signOut: "auth/logout",
+    }),
+    async logout() {
+      await axios.post("/logout").then(({ data }) => {
+        this.signOut();
+        this.$router.push({ name: "login" });
+      });
+    },
+  },
 };
 </script>

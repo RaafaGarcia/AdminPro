@@ -26,45 +26,16 @@ class UserController extends Controller
     {
         $queries = ['search', 'page'];
 
-        $columns = [
-            [
-                'id' => 5,
-                'name' => "Id",
-                'slot' => "id",
+       
 
-            ],
-            [
-                'id' => 1,
-                'name' => "Nombre",
-                'slot' => "name",
+        $users = User::filter($request->only($queries))->paginate(2)->withQueryString();
+        return $this->sendResponse( $users,'Usuarios consultados');
 
-            ],
-            [
-                'id' => 2,
-                'name' => "Correo Electrónico",
-                'slot' => "email",
-
-            ],
-            [
-                'id' => 3,
-                'name' => "Rol",
-                'slot' => "role.name",
-
-            ],
-            [
-                'id' => 4,
-                'name' => "Fecha de creación",
-                'slot' => "created_at",
-
-            ],
-
-        ];
-
-        return Inertia::render('User/Index', [
-            'users' => User::filter($request->only($queries))->paginate(25)->withQueryString(),
-            'filters' => $request->all($queries),
-            'columns' => $columns,
-        ]);
+        // return Inertia::render('User/Index', [
+        //     'users' => User::filter($request->only($queries))->paginate(25)->withQueryString(),
+        //     'filters' => $request->all($queries),
+        //     'columns' => $columns,
+        // ]);
     }
 
     /**
